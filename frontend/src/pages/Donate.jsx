@@ -47,7 +47,7 @@ function Donate() {
     setSuccess('');
 
     try {
-      const response = await fetch('https://ngo-donation-charity-cd2x.onrender.com', {
+      const response = await fetch('https://ngo-donation-charity-cd2x.onrender.com/api/donations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
